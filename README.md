@@ -42,12 +42,10 @@ cdn:
   enable: true
   onlypost: false
   url: https://static.xxx.cn
-  img_url: https://static.xxx.cn
 qiniu:
   bucket: 'bundle'
   dirPrefix: 'static'
   secret_file: qn-sec.json
-  urlPrefix: 'http://bucket_name.qiniudn.com/static'
   allow_file: 'assets-css-images-js'
   update_exist: true
 
@@ -66,16 +64,10 @@ deploy:
 url: https://static.xxx.cn    
 img_url: https://static.xxx.cn       
 * `qiniu` 字段：
->`urlPrefix` 参数：
->七牛空间地址的前缀，会按默认格式自动生成地址，所以此参数**可省略**。  
-默认格式为 `http://bucket_name.qiniudn.com/static` ，如果你的七牛空间使用自定义域名或域名不是此格式的，请配置此参数。  
-当你设置了 `dirPrefix` 参数后，如`static`。则此url地址必须加上目录后缀 `/static` ，
-即`http://bucket_name.qiniudn.com/static`，否则静态资源将无法访问。   
-
 > `access_key` 参数： 上传密钥AccessKey   
 > `secret_key` 参数： 上传密钥SecretKey   
 > `secret_file` 参数： 秘钥文件路径，可以将上述两个属性配置到文件内，防止泄露，json格式。绝对路径相对路径均可      
-
+> `allow_file` 参数： public中允许上传的文件夹（如果hexo build后生成出其他路径的资源文件则需要加上去），使用方法用`-`分隔开  
 
 ## 使用方法:
 ```

@@ -4,15 +4,8 @@ global.hexo = hexo;
 console.log('-------开始-------')
 if (!hexo.config.cdn || !hexo.config.cdn.enable) {
     return;
-}
-
-if (hexo.config.cdn.img_url === undefined) {
-    hexo.config.cdn.img_url = hexo.config.cdn.url;
-} else if (
-    hexo.config.cdn.img_url.indexOf("http") !== 0 &&
-    hexo.config.cdn.img_url.indexOf("//") !== 0
-) {
-    hexo.config.cdn.img_url = hexo.config.cdn.url + hexo.config.cdn.img_url ;
+}else{
+    hexo.config.cdn.url = hexo.config.cdn.url+'/public'
 }
 
 if (hexo.config.cdn.onlypost) {
