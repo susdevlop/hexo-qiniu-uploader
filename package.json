@@ -1,0 +1,36 @@
+{
+  "name": "hexo-qiniu-uploader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "eslint": "eslint .",
+    "test-source": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest"
+  },
+  "keywords": [
+    "hexo",
+    "image",
+    "path",
+    "cdn"
+  ],
+  "author": "zhepama@gmail.com",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhepama/hexo-generator-cdn.git"
+  },
+  "dependencies": {
+    "lodash": "4.13.1",
+    "minimatch": "^3.0.0",
+    "qiniu": "^6.1.11"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "jest": "^24.9.0"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  }
+}
