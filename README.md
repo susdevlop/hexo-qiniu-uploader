@@ -77,7 +77,7 @@ img_url: https://static.xxx.cn
 > `secret_file` 参数： 秘钥文件路径，可以将上述两个属性配置到文件内，防止泄露，json格式。绝对路径相对路径均可      
 
 
-##使用方法:
+## 使用方法:
 ```
     hexo clean
     hexo generate
