@@ -22,7 +22,7 @@ else {
     hexo.extend.filter.register('after_render:html', require('./lib/process').processSite);
     hexo.extend.filter.register('after_render:css', require('./lib/process').processSheet);
 }
-// hexo.extend.filter.register('after_render', function(str, data){
-//     console.log('开始上传静态文件到七牛云');
-//     require('./lib/uploader').upload()
-// });
+hexo.extend.deployer.register('upload', function(){
+    console.log('开始上传静态文件到七牛云');
+    require('./lib/uploader').upload()
+});
