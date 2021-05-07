@@ -1,7 +1,7 @@
 {
   "name": "hexo-qiniu-uploader",
   "version": "1.0.0",
-  "description": "",
+  "description": "A Hexo plugin for uploading assets to CDN",
   "main": "index.js",
   "scripts": {
     "eslint": "eslint .",
@@ -14,11 +14,11 @@
     "path",
     "cdn"
   ],
-  "author": "zhepama@gmail.com",
+  "author": "sushome@qq.com",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zhepama/hexo-generator-cdn.git"
+    "url": "git+https://github.com/susdevlop/hexo-qiniu-uploader.git"
   },
   "dependencies": {
     "lodash": "4.13.1",
@@ -32,5 +32,9 @@
   "directories": {
     "lib": "lib",
     "test": "test"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/susdevlop/hexo-qiniu-uploader/issues"
+  },
+  "homepage": "https://github.com/susdevlop/hexo-qiniu-uploader#readme"
 }
