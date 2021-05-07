@@ -17,5 +17,5 @@ else {
 }
 hexo.extend.deployer.register('upload', function(){
     console.log('开始上传静态文件到七牛云');
-    require('./lib/uploader').upload()
+    require('./lib/uploader')()
 });
