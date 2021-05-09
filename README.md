@@ -64,6 +64,7 @@ deploy:
 url: https://static.xxx.cn    
 img_url: https://static.xxx.cn       
 * `qiniu` 字段：
+> `env` 参数： 如果使用env字段，那么access_key和secret_key将作为process.env的key并引用
 > `access_key` 参数： 上传密钥AccessKey   
 > `secret_key` 参数： 上传密钥SecretKey   
 > `secret_file` 参数： 秘钥文件路径，可以将上述两个属性配置到文件内，防止泄露，json格式。绝对路径相对路径均可      
