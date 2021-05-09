@@ -69,6 +69,7 @@ img_url: https://static.xxx.cn
 > `secret_key` 参数： 上传密钥SecretKey   
 > `secret_file` 参数： 秘钥文件路径，可以将上述两个属性配置到文件内，防止泄露，json格式。绝对路径相对路径均可      
 > `allow_file` 参数： public中允许上传的文件夹（如果hexo build后生成出其他路径的资源文件则需要加上去），使用方法用`-`分隔开  
+> `update_exist` 参数： 是否覆盖上传
 
 ## 使用方法:
 ```
