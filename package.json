@@ -1,6 +1,6 @@
 {
   "name": "hexo-qiniu-uploader",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A Hexo plugin for uploading assets to CDN",
   "main": "index.js",
   "scripts": {
