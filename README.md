@@ -42,6 +42,7 @@ cdn:
   enable: true
   onlypost: false
   url: https://static.xxx.cn
+  webImage: true
 qiniu:
   bucket: 'bundle'
   dirPrefix: 'static'
@@ -62,7 +63,8 @@ deploy:
 >enable为是否启用    
 >onlypost: false仅替换文章中的图片    
 url: https://static.xxx.cn    
-img_url: https://static.xxx.cn       
+img_url: https://static.xxx.cn  
+webImage: 是否在替换的图片后添加-web参数
 * `qiniu` 字段：
 > `env` 参数： 如果使用env字段，那么access_key和secret_key将作为process.env的key并引用
 > `access_key` 参数： 上传密钥AccessKey   
